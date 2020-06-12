@@ -85,9 +85,9 @@
         <div class="parallax">
             <img src="images/cover.jpg">---->
 
-    <div class="services  scrollspy" id="services">
+    <div class="services  scrollspy" id="services" style="background-color: azure;">
         <div class="container">
-            <div class="serviceheading" style="background-color: #e8e2e2;">
+            <div class="serviceheading">
                 <h5 class=" center-align black-text darken-3 methodhead" style="padding-top: 10px; padding-bottom: 10px; ">CHOOSE YOUR TRAINING NEED</h5>
             </div>
             <div class="row">
@@ -179,7 +179,89 @@
             </div>
         </div>
     </div>
-    <!-----GOALS---->
+
+    <!----Process-->
+    <div class="process">
+        <div class="container">
+            <div class="hrading">
+                <h4 class="grey-text center-align" style="padding-bottom: 30px;">OUR PROCESS</h4>
+                
+            </div>
+            <div class="row">
+                <div class="col s12 l3 ">
+                   <img src="images/process1.jpg" alt="" class="circle responsive-img">  
+                    <div class="content">
+                    <p class="center-align">Analyse your Goals</p>
+                </div>
+                </div>
+                
+                <div class="col s12 l3 ">
+                    <img src="images/process2.jpg" alt="" class="circle responsive-img"> 
+                    <div class="content">
+                    <p class="center-align">Analyse your Goals</p>
+                </div>
+                </div>
+                
+                <div class="col s12 l3 ">
+                    <img src="images/process3.jpg" alt="" class="circle responsive-img"> 
+                    <div class="content">
+                    <p class="center-align">Analyse your Goals</p>
+                </div>
+                </div>
+                
+                <div class="col s12 l3 ">
+                    <img src="images/process4.jpg" alt="" class="circle responsive-img"> 
+                    <div class="content">
+                    <p class="center-align">Analyse your Goals</p>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-----Testimonials---->
+    
+    <div class="testimonials" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)),  url(images/test.jpg); background-position: center; background-repeat: no-repeat;">
+        <div class="container">
+        <div class="row">
+      <div class="col s12 l4">
+        <h3 class="orange-text text-darken-4">WHAT CLIENTS SAY.....</h3>
+    
+      </div>
+      <div class="col s12 l6 offset-l2">
+          
+          <!-- tabs -->
+        <ul class="tabs transparent">
+          <li class="tab col s4">
+            <a href="#client1" class="active blue-text lighten-4">Anil Sharma</a>
+          </li>
+          <li class="tab col s4">
+            <a href="#client2" class="blue-text lighten-4">Neha Malik</a>
+          </li>
+            <li class="tab col s4">
+            <a href="#client3" class="blue-text lighten-2">Kunal Singh</a>
+          </li>
+        </ul>
+        <div id="client1" class="col s12">
+            <p class="flow-text yellow-text">Anil Sharma</p>
+            <p class="white-text">Having tried many of the gyms in the city I had my best experiences at Be Active. "Name of trainer" is friendly, supportive and motivate you to lift more weight or do more exercise then you think you can. He is fantastic and cheer you on in your fitness journey. Whatever your goal is, he can support you on the way. Highly recommend!</p>
+            
+        </div>
+        <div id="client2" class="col s12">
+            <p class="flow-text pink-text text-lighten-2">Neha Malik</p>
+            <p class="white-text">Be Active is the best gym I have ever been to. I have been with "name of trainer" for 6 months now and can honestly say I feel better physically as well as mentally. The trainer is excellent and great at motivating you to achieve your fitness goals! I would have never achieved what I have so far at a normal gym. Highly recommend this gym!</p>
+        </div>
+          <div id="client3" class="col s12">
+            <p class="flow-text yellow-text text-darken-4">Kunal Singh</p>
+            <p class="white-text">The daily fitness classes are fun and there is plenty of one-on-one instruction so I am constantly improving my technique. If you are looking for a well-maintained trainer with a highly knowledgeable and positive, forward thinking trainer, then I stringly recommend Be Active.</p>
+        </div>
+        </div>
+      </div>
+        </div>
+    </div>
+
+    <!-----CONTACT FORM---->
 
     <div class="contactform" style="background-image: url(images/contactform.jpg);">
         <section class="section container">
@@ -247,7 +329,7 @@
                     <a href="#" class="white-text"><i class="material-icons orange-text" style="padding-right: 20px;">call</i>Number</a><br>
                     <a href="#" class="white-text"><i class="material-icons orange-text" style="padding-right: 20px;">email</i>Email id</a><br>
                     <a href="#" class="white-text"><i class="material-icons orange-text" style="padding-right: 20px;">house</i>Address</a><br>
-                    
+
                 </div>
             </div>
         </div>
@@ -263,6 +345,8 @@
         $(document).ready(function() {
             $('.sidenav').sidenav();
             $('.parallax').parallax();
+             $('.tabs').tabs();
+             $('.materialboxed').materialbox();
         });
 
     </script>
